@@ -40,8 +40,8 @@ ls -l -h $BACK_DIR'/site.back.'$DATE_NOW'.t'$SUF | cut --bytes=31- -
 ##############
 #RESTORE FILE#
 ##############
-echo "# RESTORE SITE AND DB" > $BACK_DIR/restore.$DATE_NOW.sh
-echo "#!/bin/bash" >> $BACK_DIR/restore.$DATE_NOW.sh
+echo "#!/bin/bash" > $BACK_DIR/restore.$DATE_NOW.sh
+echo "# RESTORE SITE AND DB" >> $BACK_DIR/restore.$DATE_NOW.sh
 if [ $MOVE_SCP = "TRUE" ] ; then \
 echo "" >> $BACK_DIR/restore.$DATE_NOW.sh;
 else echo "tar -P --"$SUF" -xvf "$BACK_DIR"/site.back."$DATE_NOW".t"$SUF >> $BACK_DIR/restore.$DATE_NOW.sh;
