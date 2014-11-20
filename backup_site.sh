@@ -1,7 +1,7 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
 #
-#  Copyright 2012 Strannik-j <mail@strannik-j.org>
+#  Copyright 2014 Strannik-j <mail@strannik-j.org>
 #  
 #  Redistribution and use in source and binary forms, with or without
 #  modification, are permitted provided that the following conditions are
