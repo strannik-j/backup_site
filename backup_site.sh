@@ -94,7 +94,7 @@ fi
 echo "sha512sum -c $BACK_DIR/sha512_$DATE_NOW.txt || echo 'Archives is NOT correct. STOP' exit 0" >> $BACK_DIR/restore.$DATE_NOW.sh;
 echo "echo 'Archives is correct. Start restore'" >> $BACK_DIR/restore.$DATE_NOW.sh;
 echo "tar -P --"$SUF" -xf "$BACK_DIR"/site.back."$DATE_NOW".t"$SUF" && echo 'SITE archive extracted'" >> $BACK_DIR/restore.$DATE_NOW.sh;
-echo $SUF"cat "$BACK_DIR"/dump.sql."$DATE_NOW"."$SUF" | mysql -u "$DB_USER" -p"$DB_PASS" "$DB_NAME"&& echo 'DB archive extracted' && rm cat "$BACK_DIR"/dump.sql."$DATE_NOW"."$SUF $BACK_DIR"/site.back."$DATE_NOW".t"$SUF >> $BACK_DIR/restore.$DATE_NOW.sh;
+echo $SUF"cat "$BACK_DIR"/dump.sql."$DATE_NOW"."$SUF" | mysql -u "$DB_USER" -p"$DB_PASS" "$DB_NAME"&& echo 'DB archive extracted'
 chmod +x $BACK_DIR/restore.$DATE_NOW.sh
 
 exit 0
