@@ -65,7 +65,7 @@ R_PATH='/home/backups/archives'
 if (test -e /usr/bin/pbzip2);then ARCHIVATOR=$A_PBZIP2 EXTRACTOR='bzcat' SUF='bz';\
 elif (test -e /usr/bin/pgzip);then ARCHIVATOR=$A_PGZIP EXTRACTOR='gzcat' SUF='gz';\
 elif (test -e /bin/bzip2);then ARCHIVATOR=$A_BZIP2 EXTRACTOR='bzcat' SUF='bz';\
-elif (test -e /bin/gzip);then ARCHIVATOR=$A_GZIP EXTRACTOR='gzcat' SUF='gz';\
+elif (test -e /bin/gzip);then ARCHIVATOR=$A_GZIP EXTRACTOR='zcat' SUF='gz';\
 fi
 ###
 echo "*************************"
