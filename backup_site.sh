@@ -36,7 +36,7 @@
 
 
 SITE_DIR='/home/www-data/www/example.com'
-BACK_DIR='/home/www-data/$R_USER/example.com'
+BACK_DIR='/home/www-data/backups/example.com'
 DB_NAME='example'
 DB_USER='root'
 DB_PASS='123456789'
